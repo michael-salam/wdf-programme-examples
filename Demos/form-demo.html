@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label for="fullname">Full name</label>
+      <input
+        id="fullname"
+        name="fullname"
+        type="text"
+        placeholder="e.g. John Doe"
+        required
+        autofocus
+      />
+
+      <!-- RADIO BUTTONS -->
+      <label for="firefox">Firefox</label>
+      <input name="browser" id="firefox" type="radio" value="Firefox" />
+
+      <label for="edge">Edge</label>
+      <input name="browser" id="edge" type="radio" value="Edge" />
+
+      <label for="chrome">Chrome</label>
+      <input name="browser" id="chrome" type="radio" value="Chrome" />
+
+      <!-- CHECKBOXES -->
+      <label for="volleyball">Volleyball</label>
+      <input
+        name="volleyball"
+        id="volleyball"
+        type="checkbox"
+        value="volleyball"
+      />
+
+      <label for="football">Football</label>
+      <input name="football" id="football" type="checkbox" value="football" />
+
+      <label for="music">Music</label>
+      <input name="music" id="music" type="checkbox" value="music" />
+
+      <select name="country" id="country">
+        <option value="nigeria">Nigeria</option>
+        <option value="ghana">Ghana</option>
+        <option value="algeria">Algeria</option>
+        <option value="lebanon">Lebanon</option>
+        <option value="jordan">Jordan</option>
+      </select>
+
+      <label for="bio">Your bio</label>
+      <textarea name="bio" id="bio"></textarea>
+
+      <fieldset>
+        <legend>Relationship status</legend>
+
+        <label for="married">married</label>
+        <input name="status" id="married" type="radio" value="married" />
+
+        <label for="single">single</label>
+        <input name="status" id="single" type="radio" value="single" />
+      </fieldset>
+
+      <label for="color">Choose color</label>
+      <input type="color" name="color" id="color" />
+
+      <label for="date">Choose date</label>
+      <input type="date" name="date" id="date" />
+
+      <label for="email">Choose email</label>
+      <input type="email" name="email" id="email" />
+
+      <label for="file">Choose file</label>
+      <input type="file" name="file" id="file" />
+
+      <label for="number">Choose number</label>
+      <input
+        type="number"
+        name="number"
+        id="number"
+        min="10"
+        max="100"
+        step="6"
+      />
+
+      <label for="password">Choose password</label>
+      <input type="password" name="password" id="password" />
+
+      <label for="search">search</label>
+      <input type="search" name="search" id="search" />
+
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
