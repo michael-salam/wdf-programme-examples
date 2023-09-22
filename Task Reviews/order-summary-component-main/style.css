@@ -1,0 +1,114 @@
+/*  css reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    color: hsl(224, 23%, 55%);
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: hsl(225, 100%, 94%);
+}
+
+h3 {
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.bold {
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+}
+.card {
+    border-radius: 1.3rem;
+    background-color: white;
+    box-shadow: 0px 3px 32px -11px rgba(51, 51, 51, 0.23);
+    width: 33%;
+    margin: 3rem auto;
+    overflow: hidden;
+}
+
+.cover-image {
+    width: 100%;
+}
+
+.details {
+    padding: 2rem 2rem 3rem 2rem;
+}
+
+.text {
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.plan {
+    display: flex;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.plan a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    transition: all 200ms;
+}
+
+.plan a:hover {
+    color: hsl(276, 47%, 55%);
+    text-decoration: none;
+}
+
+.plan > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.plan span {
+    display: block;
+}
+
+.proceed, .cancel {
+    font-weight: 700;
+    font-family: 'Red Hat Display', sans-serif;
+    display: block;
+    width: 100%;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.proceed {
+    background-color: hsl(245, 75%, 52%);
+    padding: 1rem;
+    color: white;
+    border-radius: 0.75rem;
+    margin: 1rem 0;
+    box-shadow: 0px 5px 32px -11px hsl(224, 23%, 55%);
+    transition: background-color 200ms;
+}
+
+.proceed:hover {
+    background-color: hsl(276, 47%, 55%);
+}
+
+.cancel {
+    margin-top: 1rem;
+    color: hsl(224, 23%, 55%);
+    transition: color 200ms;
+}
+
+.cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
