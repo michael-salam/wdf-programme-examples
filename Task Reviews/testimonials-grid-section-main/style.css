@@ -26,11 +26,8 @@ body {
   gap: 1rem;
   width: 90%;
   margin: 2rem auto;
-  grid-template-areas:
-    "daniel daniel jonathan kira"
-    "janette patrick patrick kira";
-  /* grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, auto); */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
 }
 
 .grid-item {
@@ -55,8 +52,7 @@ body {
 }
 
 .daniel {
-  /* grid-column: 1 / span 2; */
-  grid-area: daniel;
+  grid-column: 1 / span 2;
   background-color: hsl(263, 55%, 52%);
   color: white;
   background-image: url(./images/bg-pattern-quotation.svg);
@@ -65,18 +61,15 @@ body {
 }
 
 .jonathan {
-  grid-area: jonathan;
   background-color: hsl(217, 19%, 35%);
   color: white;
 }
 
 .kira {
-  grid-area: kira;
   grid-row: span 2;
 }
 
 .patrick {
-  grid-area: patrick;
   grid-column: 2 / span 2;
   background-color: hsl(219, 29%, 14%);
   color: white;
