@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        animation: change-bg 5s infinite;
+      }
+
+      div {
+        padding: 5rem;
+        width: fit-content;
+        height: fit-content;
+        background-color: burlywood;
+        animation: name duration timing-function delay iteration-count direction
+          fill-mode;
+      }
+
+      @keyframes change-bg {
+        0% {
+          background-color: brown;
+        }
+        20% {
+          background-color: orange;
+        }
+        40% {
+          background-color: yellow;
+        }
+        60% {
+          background-color: green;
+        }
+        100% {
+          background-color: blue;
+        }
+      }
+
+      @keyframes example {
+        0% {
+          background-color: red;
+        }
+        50% {
+          transform: translate(10rem, 0);
+        }
+        100% {
+          transform: translate(10rem, 10rem);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>My content</div>
+  </body>
+</html>

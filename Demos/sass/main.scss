@@ -1,0 +1,34 @@
+// SASS : SYNTACTICALLY AWESOME STYLE SHEET
+// PARTIALS
+// MIXINS
+@import "global";
+
+$green-color: green;
+
+@mixin emphasized {
+  font-weight: bold;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+@function pxToRem($pxValue) {
+  $remValue: ($pxValue / 16) + rem;
+  @return $remValue;
+}
+
+body {
+  background-color: $green-color;
+
+  h1 {
+    @include emphasized;
+    background-color: orange;
+    width: pxToRem(640);
+    &:hover {
+      background-color: darken(orange, 10%);
+    }
+  }
+  p {
+    @include emphasized;
+    color: yellow;
+  }
+}
