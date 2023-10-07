@@ -1,0 +1,238 @@
+/* CSS RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #000047;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  color: #555;
+  background-color: #f5f5f5;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+button {
+  border: none;
+  font-family: inherit;
+}
+
+h1,
+h2,
+h3 {
+  color: #222222;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.btn {
+  border-radius: 6px;
+  padding: 0.25rem 0.5rem;
+  font-weight: 600;
+  transition: box-shadow 200ms, transform 200ms;
+}
+
+.btn:hover {
+  box-shadow: 4px 4px 0px 4px #000000;
+  transform: translate(-2px, -2px);
+}
+
+.btn:active {
+  box-shadow: 2px 2px 0px 2px #000000;
+  transform: translate(0);
+}
+
+.btn.btn-pri {
+  background-color: var(--primary);
+  color: white;
+}
+
+.btn.btn-sec {
+  background-color: white;
+  color: var(--primary);
+}
+
+.sub-heading {
+  font-size: clamp(1rem, 0.4222rem + 2.4653vw, 2rem);
+  margin: 0rem auto 2rem auto;
+  max-width: 60ch;
+  line-height: 1.2;
+}
+
+.navbar {
+  background-color: var(--primary);
+  padding: 1rem 10%;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.links li a {
+  padding: 0.5rem 1rem;
+  font-size: clamp(0.75rem, 0.5998rem + 0.641vw, 1.01rem);
+}
+
+.links .leave-review {
+  border: 2px solid white;
+}
+
+.banner {
+  padding: 0.75rem 1rem;
+  background-color: #d73737;
+  color: white;
+  text-align: center;
+  font-size: clamp(0.75rem, 0.5998rem + 0.641vw, 1.01rem);
+}
+
+.banner a {
+  font-weight: 600;
+  text-decoration: underline;
+  color: white;
+  transition: color 200ms;
+}
+
+.banner a:hover {
+  color: var(--primary);
+}
+
+.header {
+  text-align: center;
+  width: 80%;
+  margin: 8vw auto;
+}
+
+.header .heading {
+  font-weight: 900;
+  font-size: clamp(2.5rem, 1.4357rem + 4.0067vw, 4rem);
+  line-height: 0.8;
+  margin-bottom: 1rem;
+}
+
+.header .btn {
+  padding: 1.25rem 3rem;
+  font-size: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 2rem;
+  color: #000;
+  margin-bottom: 4rem;
+}
+
+.review p {
+  margin-bottom: 0.5rem;
+}
+
+.review .name {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.star-container {
+  margin-bottom: 1rem;
+}
+
+.star-container span {
+  font-size: 2rem;
+}
+
+.more-reviews {
+  font-size: 1.5rem;
+  color: var(--primary);
+  transition: font-weight 200ms;
+}
+
+.more-reviews:hover {
+  font-weight: 600;
+}
+
+.leave-review-cta {
+  text-align: center;
+  background-color: #ebebeb;
+  padding: 4rem 1rem;
+}
+
+.leave-review-cta .btn {
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+}
+
+.faqs {
+  text-align: center;
+  margin: 4rem auto;
+  width: 80%;
+}
+
+.faqs div {
+  text-align: left;
+}
+
+.faqs div button {
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.25rem;
+}
+
+.faqs div button span {
+  text-align: left;
+}
+
+.expand-icon {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.answer {
+  display: none;
+}
+
+.footer {
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.footer span {
+  color: white;
+}
