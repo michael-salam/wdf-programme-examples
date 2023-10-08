@@ -110,7 +110,7 @@ p {
 
 .banner {
   padding: 0.75rem 1rem;
-  background-color: #d73737;
+  background-color: #d01616;
   color: white;
   text-align: center;
   font-size: clamp(0.75rem, 0.5998rem + 0.641vw, 1.01rem);
@@ -169,6 +169,7 @@ p {
 
 .star-container span {
   font-size: 2rem;
+  color: rgb(255, 204, 0);
 }
 
 .more-reviews {
@@ -223,6 +224,10 @@ p {
 
 .answer {
   display: none;
+}
+
+.faqs div button.active + .answer {
+  display: block;
 }
 
 .footer {

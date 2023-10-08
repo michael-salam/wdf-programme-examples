@@ -53,11 +53,11 @@
             repudiandae rerum minima!
           </p>
           <div class="star-container">
-            <span>&star;</span>
-            <span>&star;</span>
-            <span>&star;</span>
-            <span>&star;</span>
-            <span>&star;</span>
+            <span>&starf;</span>
+            <span>&starf;</span>
+            <span>&starf;</span>
+            <span>&starf;</span>
+            <span>&starf;</span>
           </div>
           <span class="name">Dev Nwafor</span>
         </div>
@@ -68,11 +68,11 @@
             repudiandae rerum minima!
           </p>
           <div class="star-container">
-            <span>&star;</span>
-            <span>&star;</span>
-            <span>&star;</span>
-            <span>&star;</span>
-            <span>&star;</span>
+            <span>&starf;</span>
+            <span>&starf;</span>
+            <span>&starf;</span>
+            <span>&starf;</span>
+            <span>&starf;</span>
           </div>
           <span class="name">Dev Nwafor</span>
         </div>
@@ -83,11 +83,11 @@
             repudiandae rerum minima!
           </p>
           <div class="star-container">
-            <span>&star;</span>
-            <span>&star;</span>
-            <span>&star;</span>
-            <span>&star;</span>
-            <span>&star;</span>
+            <span>&starf;</span>
+            <span>&starf;</span>
+            <span>&starf;</span>
+            <span>&starf;</span>
+            <span>&starf;</span>
           </div>
           <span class="name">Dev Nwafor</span>
         </div>
@@ -98,11 +98,11 @@
             repudiandae rerum minima!
           </p>
           <div class="star-container">
-            <span>&star;</span>
-            <span>&star;</span>
-            <span>&star;</span>
-            <span>&star;</span>
-            <span>&star;</span>
+            <span>&starf;</span>
+            <span>&starf;</span>
+            <span>&starf;</span>
+            <span>&starf;</span>
+            <span>&starf;</span>
           </div>
           <span class="name">Dev Nwafor</span>
         </div>
@@ -113,11 +113,11 @@
             repudiandae rerum minima!
           </p>
           <div class="star-container">
-            <span>&star;</span>
-            <span>&star;</span>
-            <span>&star;</span>
-            <span>&star;</span>
-            <span>&star;</span>
+            <span>&starf;</span>
+            <span>&starf;</span>
+            <span>&starf;</span>
+            <span>&starf;</span>
+            <span>&starf;</span>
           </div>
           <span class="name">Dev Nwafor</span>
         </div>
@@ -128,11 +128,11 @@
             repudiandae rerum minima!
           </p>
           <div class="star-container">
-            <span>&star;</span>
-            <span>&star;</span>
-            <span>&star;</span>
-            <span>&star;</span>
-            <span>&star;</span>
+            <span>&starf;</span>
+            <span>&starf;</span>
+            <span>&starf;</span>
+            <span>&starf;</span>
+            <span>&starf;</span>
           </div>
           <span class="name">Dev Nwafor</span>
         </div>
@@ -231,5 +231,23 @@
       <a class="logo" href="#">wdf</a>
       <span>&copy; 2023</span>
     </footer>
+
+    <script>
+      const faqBtns = document.querySelectorAll(".faqs div button");
+      const expandIcons = document.querySelectorAll(".expand-icon");
+
+      faqBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          if (btn.classList.contains("active")) {
+            btn.classList.remove("active");
+          } else {
+            faqBtns.forEach((btn) => {
+              btn.classList.remove("active");
+            });
+            btn.classList.add("active");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
